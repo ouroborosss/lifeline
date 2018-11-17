@@ -22,7 +22,7 @@ public class xujiaweiPrisoner implements Prisoner {
         for (; totalPerson > totalCount; totalPerson++) {
             index = last + 1024;
         }
-        return (int) ((last + Math.random()*250 + index)  / (totalCount + last)  * 100 / ((totalCount - last) / ((index + totalCount / totalPerson + 1) / 2)));
+        return (int) ((last + Math.random()*250 + index)  / (totalCount + last)  * 100 / ((totalCount - last) / ((index + totalCount / totalPerson ) / 2)));
     }
 
     @Override
